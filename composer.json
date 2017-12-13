@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "KleeGroup\\GoogleReCaptchaBundle\\": "" }
+        "psr-0": { "KleeGroup\\GoogleReCaptchaBundle": "" }
     },
     "target-dir": "KleeGroup/GoogleReCaptchaBundle",
     "require": {
