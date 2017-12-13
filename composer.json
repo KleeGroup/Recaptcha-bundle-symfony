@@ -12,9 +12,8 @@
         }
     ],
     "autoload": {
-        "psr-0": { "KleeGroup\\GoogleReCaptchaBundle": "" }
+        "psr-4": { "KleeGroup\\GoogleReCaptchaBundle\\": "" }
     },
-    "target-dir": "KleeGroup/GoogleReCaptchaBundle",
     "require": {
         "php": ">=5.5.9",
         "google/recaptcha": "^1.1.3",
