@@ -1,0 +1,22 @@
+services:
+    google_re_captcha.form.type:
+        class: KleeGroup\GoogleReCaptchaBundle\Form\Type\ReCaptchaType
+        public: false
+        arguments:
+            - "%google_re_captcha.site_key%"
+            - "%google_re_captcha.enabled%"
+            - "%google_re_captcha.ajax%"
+            - "%google_re_captcha.locale_key%"
+        tags:
+            - { name: form.type }
+
+    google_re_captcha.validator:
+        class:  KleeGroup\GoogleReCaptchaBundle\Validator\Constraints\ReCaptchaValidator
+        public: false
+        arguments:
+            - "%google_re_captcha.enabled%"
+            - "%google_re_captcha.secret_key%"
+            - "@request_stack"
+            - "%google_re_captcha.http_proxy%"
+        tags:
+            - { name: validator.constraint_validator, alias: google_re_captcha_validator }

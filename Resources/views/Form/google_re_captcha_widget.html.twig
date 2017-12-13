@@ -1,0 +1,14 @@
+{% block google_re_captcha_widget %}
+    {% spaceless %}
+        {% if form.vars.enabled  %}
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div
+                class="g-recaptcha"
+                data-theme="{{ attr.options.theme }}"
+                data-type="{{ attr.options.type }}"
+                data-size="{{ attr.options.size }}"
+                data-sitekey="{{ form.vars.site_key }}"
+            ></div>
+        {% endif %}
+    {% endspaceless %}
+{% endblock %}

@@ -1,0 +1,4 @@
+google_re_captcha:
+    validator.message:
+        empty: "Veuillez renseigner le captcha"
+        invalid: "Le captcha n'est pas valide"

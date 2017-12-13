@@ -1,0 +1,23 @@
+{
+    "name": "kleegroup/googleRecaptcha-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony Google Recaptcha Form Type",
+    "keywords": ["Validator", "Captcha", "Google"],
+    "homepage": "https://github.com/KleeGroup/Recaptcha-bundle-symfony",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Klee Group",
+            "homepage": "http://www.kleegroup.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "google/recaptcha": "^1.1.3",
+        "symfony/symfony": "^3.0",
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.0",
+        "phpunit/phpunit": "~5.4"
+    }
+}
