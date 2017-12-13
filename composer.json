@@ -12,7 +12,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "KleeGroup\\GoogleReCaptchaBundle": "" }
+        "psr-4": { "KleeGroup\\GoogleReCaptchaBundle\\": "" }
     },
     "require": {
         "php": ">=5.5.9",
