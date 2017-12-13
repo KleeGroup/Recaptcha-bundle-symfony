@@ -1,5 +1,5 @@
 {
-    "name": "kleegroup/googleRecaptcha-bundle",
+    "name": "kleegroup/google-recaptcha-bundle",
     "type": "symfony-bundle",
     "description": "Symfony Google Recaptcha Form Type",
     "keywords": ["Validator", "Captcha", "Google"],
