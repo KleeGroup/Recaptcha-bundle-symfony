@@ -11,6 +11,9 @@
             "homepage": "http://www.kleegroup.com/"
         }
     ],
+    "autoload": {
+        "psr-4": { "KleeGroup\\GoogleReCaptchaBundle": "" }
+    },
     "require": {
         "php": ">=5.5.9",
         "google/recaptcha": "^1.1.3",
