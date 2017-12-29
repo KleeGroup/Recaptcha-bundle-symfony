@@ -68,7 +68,7 @@ class CurlPost implements RequestMethod
             CURLOPT_SSL_VERIFYPEER => true
         );
 
-        $this->curl->setoptArray($handle, array_merge($options + $this->options));
+        $this->curl->setoptArray($handle, array_merge($options , $this->options));
         $response = $this->curl->exec($handle);
         $this->curl->close($handle);
         
