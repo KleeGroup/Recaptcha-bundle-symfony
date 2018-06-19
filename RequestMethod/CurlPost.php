@@ -25,7 +25,7 @@ class CurlPost implements RequestMethod
      */
     protected $curl;
 
-    protected $options;
+    protected $options = array();
     
     /**
      * CurlPost constructor.
