@@ -27,17 +27,10 @@ class GoogleReCaptchaExtension extends ConfigurableExtension
         foreach ($configs as $key => $value) {
             $container->setParameter('google_re_captcha.'.$key, $value);
         }
-
-        $templatingEngines = $container->getParameter("templating.engines");
-
-        if (in_array("twig", $templatingEngines)) {
-            $formResource = "GoogleReCaptchaBundle:Form:google_re_captcha_widget.html.twig";
-            $container->setParameter("twig.form.resources", array_merge(
-                $container->getParameter("twig.form.resources"),
-                array($formResource)
-            ));
-        } else {
-            throw new NotSupportedException('Only twig templating engines is supported.');
-        }
+        $formResource = "@GoogleReCaptcha/Form/google_re_captcha_widget.html.twig";
+        $container->setParameter("twig.form.resources", array_merge(
+            $container->getParameter("twig.form.resources"),
+            array($formResource)
+        ));
     }
 }
