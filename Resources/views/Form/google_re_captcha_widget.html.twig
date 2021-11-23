@@ -1,5 +1,5 @@
 {% block google_re_captcha_widget %}
-    {% spaceless %}
+    {% apply spaceless %}
         {% if form.vars.enabled  %}
             <script src='https://www.google.com/recaptcha/api.js'></script>
             <div
@@ -10,5 +10,5 @@
                 data-sitekey="{{ form.vars.site_key }}"
             ></div>
         {% endif %}
-    {% endspaceless %}
+    {% endapply %}
 {% endblock %}
